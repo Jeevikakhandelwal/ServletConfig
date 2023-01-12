@@ -1,0 +1,27 @@
+<web-app>
+	<Servlet>
+		<servlet-name>ServletConfigDetails</servlet-name>
+		<servlet-class>com.abc.controller.ServletConfigDetailsApp</servlet-class>
+		
+		<init-param>
+			<param-name>driverClass</param-name>
+			<param-class>com.mysql.cj.jdbc.Driver</param-class>
+		</init-param>
+		<init-param>
+			<param-name>url</param-name>
+			<param-class>jdbc:mysql///Students</param-class>
+		</init-param>
+		<init-param>
+			<param-name>userName</param-name>
+			<param-class>root</param-class>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-class>root</param-class>
+		</init-param>
+	</Servlet>
+	<Servlet-mapping>
+		<servlet-name>ServletConfigDetails</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</Servlet-mapping>
+</web-app>
